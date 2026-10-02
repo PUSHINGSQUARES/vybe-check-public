@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b1b1b">
+  <title>Vybe-Check | Prompt Workshop</title>
+  <link rel="stylesheet" href="/app.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <main class="shell" id="top">
+    <header class="topbar">
+      <div class="brand">Vybe-Check</div>
+      <div class="local-indicator"><i></i><span>Local prompt workspace</span></div>
+    </header>
+    <nav class="tabs" role="tablist" aria-label="Workshop sections">
+      <button type="button" class="tab active" data-tab="brief" id="tab-brief" role="tab" aria-label="Brief" aria-controls="view-brief" aria-selected="true" tabindex="0">Brief</button>
+      <button type="button" class="tab" data-tab="image" id="tab-image" role="tab" aria-label="Image" aria-controls="view-image" aria-selected="false" tabindex="-1">Image</button>
+      <button type="button" class="tab" data-tab="video" id="tab-video" role="tab" aria-label="Video" aria-controls="view-video" aria-selected="false" tabindex="-1">Video</button>
+      <button type="button" class="tab" data-tab="references" id="tab-references" role="tab" aria-label="References" aria-controls="view-references" aria-selected="false" tabindex="-1">References <span id="media-count">0</span></button>
+    </nav>
+    <section class="intro">
+      <div>
+        <p class="eyebrow">Creative session <span id="revision-label">Revision 0</span></p>
+        <h1 id="session-title">Untitled creative session</h1>
+        <p id="session-summary" class="summary">Start with an idea, a reference, or an empty brief. The creative conversation shapes the prompt here.</p>
+      </div>
+      <span class="status" id="session-status">Gathering</span>
+    </section>
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+
+    <div id="manual-copy" hidden>
+      <label for="manual-copy-text" class="field-label">Agreed prompt for manual copy</label>
+      <textarea id="manual-copy-text" readonly spellcheck="false"></textarea>
+    </div>
+
+    <section class="view active" id="view-brief" role="tabpanel" aria-labelledby="tab-brief" aria-label="Creative brief">
+      <div class="section-heading"><h2>The Brief</h2><span id="brief-state">Gathering</span></div>
+      <div id="empty-brief" class="empty-state">No scene is locked yet. Build a direction in the conversation and it will appear here.</div>
+      <div id="brief-content" hidden>
+        <div id="brief-fields" class="brief-grid"></div>
+        <div class="two-column">
+          <section class="card"><h3>Continuity Locks</h3><ul id="lock-list" class="simple-list"></ul></section>
+          <section class="card"><h3>Open Choices</h3><ul id="choice-list" class="simple-list"></ul></section>
+        </div>
+        <section class="card"><h3>Provenance</h3><div id="provenance-list" class="provenance-list"></div></section>
+      </div>
+    </section>
+
+    <section class="view" id="view-image" role="tabpanel" aria-labelledby="tab-image" aria-label="Image prompts" hidden>
+      <div class="section-heading"><h2>Image Prompts</h2><span>Complete on their own</span></div>
+      <div id="empty-image" class="empty-state">The first copy-ready image prompt appears once the brief is agreed.</div>
+      <div id="image-content" hidden>
+        <div class="version-row"><label for="image-version">Prompt version</label><select id="image-version"></select></div>
+        <div class="version-row" id="image-shot-row" hidden><label for="image-shot">Series frame</label><select id="image-shot"></select></div>
+        <p id="image-note" class="note"></p>
+        <label for="image-prompt" class="field-label">Image prompt</label>
+        <textarea id="image-prompt" readonly spellcheck="false"></textarea>
+        <div class="actions">
+          <button id="copy-image" class="button primary" type="button">Copy prompt</button>
+          <button id="download-image" class="button" type="button">Export prompt</button>
+        </div>
+        <div class="draft-panel">
+          <div><h3>Suggest A Revision</h3><p>Edits here remain drafts until accepted in the creative conversation.</p></div>
+          <label for="image-draft" class="sr-only">Image prompt draft</label>
+          <textarea id="image-draft" placeholder="Change the pose, lens, light, or any wording…"></textarea>
+          <div class="actions"><button id="send-image-draft" class="button" type="button">Save draft</button><span id="image-draft-state" class="muted"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="view-video" role="tabpanel" aria-labelledby="tab-video" aria-label="Video prompts" hidden>
+      <div class="section-heading"><h2>Video Prompts</h2><span>Optional continuation</span></div>
+      <div id="empty-video" class="empty-state">Choose an image direction first. Then develop it as one preserved shot, one evolving scene, or a multishot sequence.</div>
+      <div id="video-content" hidden>
+        <div class="version-row"><label for="video-version">Video version</label><select id="video-version"></select></div>
+        <div id="video-meta" class="meta-pills"></div>
+        <label for="video-prompt" class="field-label">Video prompt</label>
+        <textarea id="video-prompt" readonly spellcheck="false"></textarea>
+        <div class="actions"><button id="copy-video" class="button primary" type="button">Copy prompt</button><button id="download-video" class="button" type="button">Export prompt</button></div>
+        <div class="draft-panel"><div><h3>Suggest A Revision</h3><p>Describe the motion change or edit the prompt. The agreed version stays intact.</p></div><label for="video-draft" class="sr-only">Video prompt draft</label><textarea id="video-draft" placeholder="Try a slower camera move, a different beat, or tighter continuity…"></textarea><div class="actions"><button id="send-video-draft" class="button" type="button">Save draft</button><span id="video-draft-state" class="muted"></span></div></div>
+      </div>
+    </section>
+
+    <section class="view" id="view-references" role="tabpanel" aria-labelledby="tab-references" aria-label="References and previews" hidden>
+      <div class="section-heading"><h2>References &amp; Previews</h2><span>Source and generated media stay distinct</span></div>
+      <section class="media-group"><h3>Supplied References</h3><div id="reference-grid" class="media-grid"></div><p id="empty-references" class="empty-state">No source references are registered in this session.</p></section>
+      <section class="media-group"><div class="preview-heading"><div><h3>Local Look Studies</h3><p id="preview-capability" class="muted">Checking local preview capability…</p></div><button type="button" id="request-preview" class="button" hidden>Generate Local Look Study</button></div><div id="preview-grid" class="media-grid"></div><p id="empty-previews" class="empty-state">No local previews have been requested. Prompt writing works without them.</p></section>
+      <section class="media-group"><h3>Saved Outputs</h3><div id="asset-grid" class="media-grid"></div><p id="empty-assets" class="empty-state">No prior generated media is registered for this session.</p></section>
+    </section>
+    <footer><span>Vybe-Check</span><span>Prompts remain local and versioned</span></footer>
+  </main>
+</body>
+</html>

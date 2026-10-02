@@ -1,0 +1,14 @@
+# Local workshop and review state
+.qc-state/
+qc-examples/
+.venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+._*

@@ -1,0 +1,27 @@
+{
+  "mode": "preserve",
+  "duration": 15,
+  "camera": "Locked wide frame at low horizon",
+  "motion": "The kite drifts gently while the horizon and fabric remain stable",
+  "settings": {
+    "fps": 24,
+    "sound": "Requested soft wind ambience without music"
+  },
+  "provenance": [
+    {
+      "text": "Soft wind ambience",
+      "kind": "supplied",
+      "source": "Invented optional sound request"
+    },
+    {
+      "text": "Locked wide frame at low horizon",
+      "kind": "proposed",
+      "source": "DOP continuity direction"
+    },
+    {
+      "text": "The kite drifts gently while the horizon and fabric remain stable",
+      "kind": "proposed",
+      "source": "Motion proposal"
+    }
+  ]
+}

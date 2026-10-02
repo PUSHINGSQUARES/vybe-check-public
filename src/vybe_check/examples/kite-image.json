@@ -1,0 +1,38 @@
+{
+  "title": "Kite over salt flat",
+  "brief": {
+    "outcome": "Spacious light study",
+    "subject_action": "A translucent kite floats over a dry salt flat",
+    "visual_priority": "Light through the kite fabric",
+    "frame": "Wide low horizon",
+    "light": "Low afternoon sun"
+  },
+  "prompt": "A translucent pale kite floats above a dry salt flat. Keep the horizon low and the kite clearly separated from the pale ground. Low afternoon sun reveals the fabric ribs and a soft trailing shadow. The scene feels spacious and quiet.",
+  "locks": [
+    "Translucent pale fabric",
+    "Dry salt flat",
+    "Low horizon"
+  ],
+  "settings": {
+    "aspect_ratio": "16:9",
+    "seed": 42
+  },
+  "provenance": [
+    {
+      "text": "A translucent kite floats over a dry salt flat",
+      "kind": "supplied",
+      "source": "Invented example user request"
+    },
+    {
+      "text": "Visible material texture",
+      "kind": "inferred",
+      "source": "Material description"
+    },
+    {
+      "text": "Wide low horizon",
+      "kind": "proposed",
+      "source": "Example framing choice"
+    }
+  ],
+  "note": "Invented scenario. The separate reference is a programmatic generic colour and geometry fixture, not a supplied photograph or model-generated study."
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=80,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vybe-check"
+version = "0.1.0rc1"
+description = "A local creative workshop for image and video prompts"
+requires-python = ">=3.11,<3.15"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+dependencies = ["portalocker==4.4.0", "Pillow>=11.3,<14"]
+
+[project.optional-dependencies]
+judge = ["keyring==25.7.0; sys_platform != 'win32'", "winrt-Windows.Security.Credentials==3.2.1; sys_platform == 'win32'"]
+dev = ["pytest>=8.4,<10", "build>=1.3,<2", "playwright>=1.55,<2"]
+
+[project.scripts]
+vybe-check = "vybe_check.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+vybe_check = ["skill/*.md", "skill/references/*.md", "studio/*.html", "studio/*.css", "studio/*.js", "examples/*.json", "examples/*.png"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

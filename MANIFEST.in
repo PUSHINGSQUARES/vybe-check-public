@@ -1,0 +1,51 @@
+# Clear automatic inputs before selecting the public source inventory.
+global-exclude *
+
+include LICENSE THIRD_PARTY_NOTICES.md README.md CHANGELOG.md pyproject.toml MANIFEST.in
+recursive-include src/vybe_check *.py
+include src/vybe_check/skill/*.md
+include src/vybe_check/skill/references/*.md
+include src/vybe_check/studio/*.html
+include src/vybe_check/studio/*.css
+include src/vybe_check/studio/*.js
+include src/vybe_check/examples/*.json
+include src/vybe_check/examples/*.png
+include examples/comfy-core.json
+recursive-include tests *.py
+recursive-include tools *.py *.sh
+recursive-include docs *.md
+
+# Private runtime inputs must never enter a source distribution.
+exclude src/vybe_check/generation.py
+exclude src/vybe_check/requests.py
+exclude src/vybe_check/provider_cli.py
+exclude src/vybe_check/models.py
+exclude src/vybe_check/creative.py
+exclude src/vybe_check/jev.py
+exclude src/vybe_check/secure_store.py
+
+# Exclude local state, environments, outputs, evidence, and native keys.
+prune **/.git
+prune **/.hg
+prune **/.svn
+prune **/.claude
+prune **/.agents
+prune **/.codex
+prune **/__pycache__
+prune **/.pytest_cache
+prune **/.mypy_cache
+prune **/.ruff_cache
+prune **/.cache
+prune **/.tox
+prune **/.nox
+prune **/.venv
+prune **/venv
+prune **/env
+prune **/node_modules
+prune **/build
+prune **/dist
+prune **/evidence
+prune **/private
+prune **/native_keys
+prune **/keys
+global-exclude ._* .DS_Store *.py[cod] *.key *.pem *.p12 *.pfx .env .env.*

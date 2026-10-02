@@ -1,0 +1,815 @@
+[
+  {
+    "hosts": [
+      "Darwin"
+    ],
+    "id": "DoD-1",
+    "mode": "installed-platform",
+    "nodeid": "tests/acceptance/test_platform.py::test_macos_wheel",
+    "type": "platform"
+  },
+  {
+    "hosts": [
+      "Windows"
+    ],
+    "id": "DoD-2",
+    "mode": "installed-platform",
+    "nodeid": "tests/acceptance/test_platform.py::test_windows_wheel",
+    "type": "platform"
+  },
+  {
+    "hosts": [
+      "Linux"
+    ],
+    "id": "DoD-3",
+    "mode": "installed-platform",
+    "nodeid": "tests/acceptance/test_platform.py::test_linux_wheel",
+    "type": "platform"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-4",
+    "mode": "installed-matrix",
+    "nodeid": "tests/acceptance/test_matrix.py::test_python_matrix",
+    "type": "matrix"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-5",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_package.py::test_sdist_install",
+    "type": "package"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-6",
+    "mode": "native-agent",
+    "nodeid": "tests/acceptance/test_agents.py::test_codex_discovery",
+    "type": "agents"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-7",
+    "mode": "native-agent",
+    "nodeid": "tests/acceptance/test_agents.py::test_claude_discovery",
+    "type": "agents"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-8",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_installer.py::test_registration_idempotency",
+    "type": "installer"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-9.1",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_installer.py::test_registration_conflict",
+    "type": "installer"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-9.2",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_lifecycle.py::test_unregister_registration_boundary",
+    "type": "lifecycle"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-9.3",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_lifecycle.py::test_uninstall_registration_boundary",
+    "type": "lifecycle"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-10.1",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_lifecycle.py::test_unregister_preserves_data",
+    "type": "lifecycle"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-10.2",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_lifecycle.py::test_uninstall_preserves_data",
+    "type": "lifecycle"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-11.1",
+    "mode": "native-store",
+    "nodeid": "tests/acceptance/test_native_store.py::test_unregister_preserves_key",
+    "type": "native_store"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-11.2",
+    "mode": "native-store",
+    "nodeid": "tests/acceptance/test_native_store.py::test_uninstall_preserves_key",
+    "type": "native_store"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-12",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_lifecycle.py::test_update_preserves_versions",
+    "type": "lifecycle"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-13",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_lifecycle.py::test_migration_rollback",
+    "type": "lifecycle"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-14",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_state.py::test_shared_root",
+    "type": "state"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-15",
+    "mode": "native-agent",
+    "nodeid": "tests/acceptance/test_agents.py::test_empty_brief",
+    "type": "agents"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-16",
+    "mode": "native-agent",
+    "nodeid": "tests/acceptance/test_agents.py::test_one_question",
+    "type": "agents"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-17",
+    "mode": "native-agent",
+    "nodeid": "tests/acceptance/test_agents.py::test_complete_brief",
+    "type": "agents"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-18",
+    "mode": "native-agent",
+    "nodeid": "tests/acceptance/test_agents.py::test_image_only",
+    "type": "agents"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-19",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_creative.py::test_provenance",
+    "type": "creative"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-20",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_creative.py::test_lock_conflict",
+    "type": "creative"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-21",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_state.py::test_prompt_history",
+    "type": "state"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-22",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_board.py::test_browser_draft",
+    "type": "board"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-23",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_state.py::test_accept_draft",
+    "type": "state"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-24",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_video.py::test_preserve_mode",
+    "type": "video"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-25",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_video.py::test_evolve_mode",
+    "type": "video"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-26",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_video.py::test_multishot_mode",
+    "type": "video"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-27",
+    "mode": "native-agent",
+    "nodeid": "tests/acceptance/test_agents.py::test_model_advice",
+    "type": "agents"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-28",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_state.py::test_stale_revision",
+    "type": "state"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-29",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_state.py::test_atomic_save",
+    "type": "state"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-30",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_board.py::test_restart",
+    "type": "board"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-31",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_board.py::test_port_collision",
+    "type": "board"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-32",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_board.py::test_loopback_binding",
+    "type": "board"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-33.1",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_board.py::test_origin_rejection",
+    "type": "board"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-33.2",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_board.py::test_session_authorisation",
+    "type": "board"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-34",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_media.py::test_media_boundary",
+    "type": "media"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-35",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_privacy.py::test_raw_path_exclusion",
+    "type": "privacy"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-36",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_media.py::test_original_readonly",
+    "type": "media"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-37",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_export.py::test_reference_exclusion",
+    "type": "export"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-38",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_privacy.py::test_secret_exclusion",
+    "type": "privacy"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-39",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_layout.py::test_width_360",
+    "type": "layout"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-40",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_layout.py::test_width_640",
+    "type": "layout"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-41",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_layout.py::test_width_1024",
+    "type": "layout"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-42",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_layout.py::test_keyboard",
+    "type": "layout"
+  },
+  {
+    "hosts": [
+      "Darwin"
+    ],
+    "id": "DoD-43",
+    "mode": "native-store",
+    "nodeid": "tests/acceptance/test_native_store.py::test_macos_keychain",
+    "type": "native_store"
+  },
+  {
+    "hosts": [
+      "Windows"
+    ],
+    "id": "DoD-44",
+    "mode": "native-store",
+    "nodeid": "tests/acceptance/test_native_store.py::test_windows_locker",
+    "type": "native_store"
+  },
+  {
+    "hosts": [
+      "Linux"
+    ],
+    "id": "DoD-45",
+    "mode": "native-store",
+    "nodeid": "tests/acceptance/test_native_store.py::test_linux_secret_service",
+    "type": "native_store"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-46",
+    "mode": "native-store",
+    "nodeid": "tests/acceptance/test_native_store.py::test_rejected_backend",
+    "type": "native_store"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-47",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_integration.py::test_locked_store_baseline",
+    "type": "integration"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-48",
+    "mode": "local-study",
+    "nodeid": "tests/acceptance/test_preview.py::test_capability",
+    "type": "preview"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-49",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_preview.py::test_no_automatic_preview",
+    "type": "preview"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-50",
+    "mode": "local-study",
+    "nodeid": "tests/acceptance/test_preview.py::test_live_study",
+    "type": "preview"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-51",
+    "mode": "local-study",
+    "nodeid": "tests/acceptance/test_preview.py::test_versioned_outputs",
+    "type": "preview"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-52",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_preview.py::test_promote_generated",
+    "type": "preview"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-53",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_judge.py::test_no_jev_baseline",
+    "type": "judge"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-54",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_judge.py::test_payload_minimization",
+    "type": "judge"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-55",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_judge.py::test_consent_cost_gate",
+    "type": "judge"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-56",
+    "mode": "live-provider",
+    "nodeid": "tests/acceptance/test_judge_live.py::test_typesafe_live",
+    "type": "judge_live"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-57",
+    "mode": "live-provider",
+    "nodeid": "tests/acceptance/test_judge_live.py::test_openrouter_live",
+    "type": "judge_live"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-58",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_judge.py::test_numeric_validation",
+    "type": "judge"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-59",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_integration.py::test_judge_failure_baseline",
+    "type": "integration"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-60",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_package.py::test_paid_generation_excluded",
+    "type": "package"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-61",
+    "mode": "installed-runtime",
+    "nodeid": "tests/acceptance/test_integration.py::test_offline_core",
+    "type": "integration"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-62",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_release.py::test_fresh_history",
+    "type": "release"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-63",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_release.py::test_licence_notices",
+    "type": "release"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-64.1",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_release.py::test_public_scan",
+    "type": "release"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-64.2",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_release.py::test_scan_gate_red_check",
+    "type": "release"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-65",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_release.py::test_operational_review",
+    "type": "release"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-66",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_release.py::test_identity_review",
+    "type": "release"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-67",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_release.py::test_artifact_binding",
+    "type": "release"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-68",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_release.py::test_support_report",
+    "type": "release"
+  },
+  {
+    "hosts": [
+      "Darwin",
+      "Windows",
+      "Linux"
+    ],
+    "id": "DoD-69",
+    "mode": "final-artifact",
+    "nodeid": "tests/acceptance/test_release.py::test_quickstart",
+    "type": "release"
+  }
+]

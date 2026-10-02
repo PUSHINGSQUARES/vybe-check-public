@@ -1,0 +1,27 @@
+{
+  "mode": "multishot",
+  "duration": 15,
+  "camera": "Wide establishing view, medium fabric view, and wide closing view",
+  "motion": "Wind carries the kite across three connected views",
+  "settings": {
+    "fps": 24,
+    "sound": "Requested soft wind ambience without music"
+  },
+  "provenance": [
+    {
+      "text": "Soft wind ambience",
+      "kind": "supplied",
+      "source": "Invented optional sound request"
+    },
+    {
+      "text": "Wide establishing view, medium fabric view, and wide closing view",
+      "kind": "proposed",
+      "source": "DOP continuity direction"
+    },
+    {
+      "text": "Wind carries the kite across three connected views",
+      "kind": "proposed",
+      "source": "Motion proposal"
+    }
+  ]
+}

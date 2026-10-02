@@ -1,0 +1,27 @@
+{
+  "mode": "evolve",
+  "duration": 15,
+  "camera": "Slow forward movement at the same low horizon",
+  "motion": "The kite rises gradually, then settles into a higher position",
+  "settings": {
+    "fps": 24,
+    "sound": "Requested soft wind ambience without music"
+  },
+  "provenance": [
+    {
+      "text": "Soft wind ambience",
+      "kind": "supplied",
+      "source": "Invented optional sound request"
+    },
+    {
+      "text": "Slow forward movement at the same low horizon",
+      "kind": "proposed",
+      "source": "DOP continuity direction"
+    },
+    {
+      "text": "The kite rises gradually, then settles into a higher position",
+      "kind": "proposed",
+      "source": "Motion proposal"
+    }
+  ]
+}

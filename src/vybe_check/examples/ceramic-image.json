@@ -1,0 +1,38 @@
+{
+  "title": "Ceramic workshop",
+  "brief": {
+    "outcome": "Quiet material study",
+    "subject_action": "A craftsperson holds a ceramic bowl in a workshop",
+    "visual_priority": "Hands and glazed rim",
+    "frame": "Eye-level medium portrait",
+    "light": "Soft window light"
+  },
+  "prompt": "An invented craftsperson holds an unmarked blue ceramic bowl in a workshop. Frame the hands and glazed rim at eye level with soft window side light. Warm clay shelves stay subdued. Keep natural surface texture and patient concentration.",
+  "locks": [
+    "Blue glaze",
+    "Unmarked bowl",
+    "Window side light"
+  ],
+  "settings": {
+    "aspect_ratio": "3:4",
+    "seed": 42
+  },
+  "provenance": [
+    {
+      "text": "A craftsperson holds a ceramic bowl in a workshop",
+      "kind": "supplied",
+      "source": "Invented example user request"
+    },
+    {
+      "text": "Visible material texture",
+      "kind": "inferred",
+      "source": "Material description"
+    },
+    {
+      "text": "Eye-level medium portrait",
+      "kind": "proposed",
+      "source": "Example framing choice"
+    }
+  ],
+  "note": "Invented scenario. The separate reference is a programmatic generic colour and geometry fixture, not a supplied photograph or model-generated study."
+}
